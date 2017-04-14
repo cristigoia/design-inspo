@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "Mihail Gaberov",
   "license": "MIT",
+  "scripts": {
+    "dev": "next"
+  },
   "dependencies": {
     "isomorphic-fetch": "^2.2.1",
     "moment": "^2.18.1",
