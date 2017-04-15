@@ -1,7 +1,6 @@
 import React from 'react';
 import 'isomorphic-fetch';
 import Feed from '../components/Feed';
-import fs from 'fs';
 require('dotenv').config();
 
 const postEndpoint = `https://mihailgaberov.dropmark.com/414652.json?key=${process.env.DROPMARK_KEY}`;
@@ -9,7 +8,6 @@ const postEndpoint = `https://mihailgaberov.dropmark.com/414652.json?key=${proce
 export default class Index extends React.Component {
 
   static async getInitialProps() {
-    console.log('>>> ', postEndpoint);
     const response = await fetch(postEndpoint);
     const json = await response.json();
     return {
