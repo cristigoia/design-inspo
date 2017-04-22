@@ -3,7 +3,7 @@ import 'isomorphic-fetch';
 import Feed from '../components/Feed';
 require('dotenv').config();
 
-const postEndpoint = `https://mihailgaberov.dropmark.com/414652.json?key=${process.env.DROPMARK_KEY}`;
+const postEndpoint = `https://mihailgaberov.dropmark.com/414652.json?key=${process.env.DROPMARK_API_KEY}`;
 
 export default class Index extends React.Component {
 

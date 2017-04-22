@@ -37,11 +37,9 @@ export default class Post extends React.Component {
             }
           </div>
           <h5>Added {moment(created_at).fromNow()}</h5>
-          {description &&
           <div>
             <p>{description}</p>
           </div>
-          }
         </div>
       </div>
     );
